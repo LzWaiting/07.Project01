@@ -1,0 +1,20 @@
+PDB 调试方法
+	
+	import pdb
+		功能：断点设置，单步执行，查看代码，查看函数，追踪变量等
+
+		命令：
+			b break 	设置断点
+			c continue 	继续执行
+			n next		单步执行
+			s step 		单步执行，可以进入函数内部
+			l list		查看代码段
+			pp			查看某个变量值
+			help		帮助
+			q quit/exit 退出调试
+
+		进入pdb调试模式：
+			pdb.set_trace()
+		直接进入pdb调试模式运行：
+			python3 -m pdb debug.py
+		示例：见debug.py
